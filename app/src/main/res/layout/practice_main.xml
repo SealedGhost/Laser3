@@ -8,27 +8,24 @@
         android:id="@+id/tv_exercise_return"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="105dp"
-        android:layout_marginTop="83dp"
+        android:layout_marginRight="60dp"
         android:background="@drawable/back"
 
-        android:layout_marginEnd="76dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignTop="@+id/textView10"
+        android:layout_toStartOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/tv_practice_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
         android:background="@drawable/pressed"
         android:gravity="center"
         android:text="@string/start"
-        android:textColor="@color/black"
+        android:textColor="#ffffff"
         android:textSize="30sp"
-        android:layout_marginTop="104dp"
-        android:layout_marginBottom="30dp"
-        android:layout_below="@+id/tv_exercise_return"
-        android:layout_alignEnd="@+id/tv_exercise_return" />
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,24 +42,38 @@
         android:textIsSelectable="false"
 
         android:layout_marginLeft="50dp"
-        android:layout_toStartOf="@+id/tv_practice_start"
-        android:layout_marginRight="150dp"
-        android:background="@drawable/bgdexercise"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         android:padding="20dp"
-        android:layout_alignBottom="@+id/tv_practiceend"
-        android:layout_alignTop="@+id/tv_practice_start" />
+         />
 
     <TextView
         android:id="@+id/tv_practiceend"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="@drawable/pressed"
         android:gravity="center"
         android:text="@string/end"
-        android:textColor="@color/black"
+        android:textColor="#ffffff"
         android:textSize="30sp"
+        android:layout_alignTop="@+id/tv_practice_start"
+        android:layout_alignBottom="@+id/tv_practice_start"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_below="@id/textView6"
+        />
 
-        android:layout_alignEnd="@+id/tv_practice_start"
-        android:layout_below="@id/tv_practice_start"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="练习模式"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="40dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"/>
 
 </RelativeLayout>
